@@ -1,0 +1,5 @@
+---
+  - name: creationg new filesystem
+  - filesystem:
+    fstype: xfs
+    dev: /dev/{{vgname}}/{{lvname}}

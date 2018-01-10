@@ -1,0 +1,7 @@
+---
+  - name: Mount filesystem
+    mount:
+    path: {{mountpath}}
+    src: /dev/{{vgname}}/{{lvname}}
+    fstype: xfs
+    state: mounted
