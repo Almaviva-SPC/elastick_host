@@ -1,6 +1,6 @@
 ---
 - name: Create mount Point Folder
-file:
+  file:
     path: "{{mountpath}}"
     state: directory
     owner: root
