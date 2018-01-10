@@ -1,6 +1,0 @@
----
-- include: CreatePV.yml
-- include: createvg.yml
-- include: createlv.yml
-- include: createfilesystem.yml
-- include: mountfs.yml
