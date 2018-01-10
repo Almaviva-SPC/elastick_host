@@ -1,0 +1,8 @@
+---
+- name: Create mount Point Folder
+file:
+    path: "{{mountpath}}"
+    state: directory
+    owner: root
+    group: root
+    mode: 0775
