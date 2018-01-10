@@ -1,4 +1,4 @@
-  - host: lezabbix
+  - host: elastic_server
   become: true
   remote_user: root
   roles:
