@@ -1,7 +1,7 @@
 ---
-- include: CreatePV.yml
-- include: createvg.yml
-- include: createlv.yml
-- include: createfilesystem.yml
+- import_tasks: CreatePV.yml
+- import_tasks: createvg.yml
+- import_tasks: createlv.yml
+- import_tasks: createfilesystem.yml
 - import_tasks: createfolder.yml
-- include: mountfs.yml
+- import_tasks: mountfs.yml
