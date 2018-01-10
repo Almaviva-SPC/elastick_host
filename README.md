@@ -1,4 +1,4 @@
-"# elastick_host"
+
 Pre setup for installation of elasticsearch on linux machine
 
 This ansible config the machine to prepare enviroment (vg file file system repo ecc)
