@@ -8,5 +8,5 @@
 
 
 # Read device information (always use unit when probing)
-- parted: "device=/dev/{{devdisk}}" unit=MiB
+- parted: device="/dev/{{devdisk}}" unit=MiB
   register: sdb_info
