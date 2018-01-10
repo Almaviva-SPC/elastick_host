@@ -3,5 +3,5 @@
     mount:
     path: {{mountpath}}
     src: /dev/{{vgname}}/{{lvname}}
-    fstype: xfs
+    fstype: {{formatfs}}
     state: mounted
