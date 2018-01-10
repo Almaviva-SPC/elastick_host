@@ -3,3 +3,4 @@ devdisk: sdb
 vgname: elastic_vg
 lvname: elastic_lv
 mountpath: /opt/data
+formatfs: xfs
