@@ -1,6 +1,6 @@
 ---
 # Create a logical volume the size of all remaining space in the volume group
 - lvol:
-    vg: {{vgname}}
-    lv: {{lvname}}
+    vg: "{{vgname}}"
+    lv: "{{lvname}}"
     size: 100%FREE

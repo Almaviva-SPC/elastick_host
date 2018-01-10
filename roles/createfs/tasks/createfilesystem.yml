@@ -1,5 +1,5 @@
 ---
   - name: creationg new filesystem
   - filesystem:
-    fstype: {{formatfs}}
-    dev: /dev/{{vgname}}/{{lvname}}
+    fstype: "{{formatfs}}"
+    dev: "/dev/{{vgname}}/{{lvname}}"

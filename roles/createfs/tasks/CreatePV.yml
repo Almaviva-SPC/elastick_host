@@ -1,12 +1,12 @@
 ---
 # Create a new primary partition for LVM
 - parted:
-    device: /dev/{{devdisk}}
+    device: "/dev/{{devdisk}}"
     number: 1
     flags: [ lvm ]
     state: present
 
 
 # Read device information (always use unit when probing)
-- parted: device=/dev/{{devdisk}} unit=MiB
+- parted: "device=/dev/{{devdisk}}" unit=MiB
   register: sdb_info
