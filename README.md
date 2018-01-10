@@ -2,5 +2,3 @@
 Preparazione macchina elastic
 
 Preparazione filesystem
-
-Porco Dio
