@@ -1,3 +1,4 @@
+---
 # Create a volume group on top of /dev/sda1 with physical extent size = 32MB.
 - lvg:
     vg: {{vgname}}
