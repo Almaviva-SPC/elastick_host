@@ -1,0 +1,3 @@
+Preparazione macchina elastic
+
+Preparazione filesystem
