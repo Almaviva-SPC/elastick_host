@@ -3,5 +3,5 @@
 - include: createvg.yml
 - include: createlv.yml
 - include: createfilesystem.yml
-- include: mountfs.yml
 - import_tasks: createfolder.yml
+- include: mountfs.yml
