@@ -27,7 +27,7 @@
 - hosts: elastic_server_data
   become: true
   remote_user: centos
-  role:
+  roles:
     - createfs
     - {role ansible-elasticsearch, es_instance_name: "Data1", es_data_dirs: "{{setup_datadirectory}}",
     es_config: {
