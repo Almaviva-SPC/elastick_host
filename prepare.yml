@@ -41,7 +41,7 @@
       bootstrap.memory_lock: false,
       }
     }
-    vars:
+  vars:
       es_scripts: false
       es_templates: false
       es_version_lock: false
