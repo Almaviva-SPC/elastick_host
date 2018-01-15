@@ -18,7 +18,7 @@
     es_scripts: false
     es_templates: false
     es_version_lock: false
-    ansible_user: ansible
+    ansible_user: centos
     es_plugins:
       - plugin: ingest-geoip
     proxy_host: http://10.221.0.22
