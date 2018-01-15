@@ -1,2 +1,13 @@
-[elastic_server]
-lezabbix
+[elastic_server_master]
+leelasticmaster
+
+[elastic_server_master:vars]
+master_node=leelasticmaster
+
+[elastic_server_data]
+leelasticdata01
+leelasticdata02
+
+[elastic_server_data:vars]
+data_node1=leelasticdata01
+data_node2=leelasticdata02
