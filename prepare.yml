@@ -29,7 +29,7 @@
   remote_user: centos
   roles:
     - createfs
-    - {role ansible-elasticsearch, es_instance_name: "Data1", es_data_dirs: "{{setup_datadirectory}}",
+    - {role: ansible-elasticsearch, es_instance_name: "Data1", es_data_dirs: "{{setup_datadirectory}}",
     es_config: {
       cluster.name: "{{elastic_Cluster}}",
       discovery.zen.ping.unicast.hosts: "{{master_node}}:9300",
