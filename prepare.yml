@@ -13,7 +13,7 @@
       node.master: true,
       bootstrap.memory_lock: false,
       }
-    }
+      }
   vars:
     es_scripts: false
     es_templates: false
@@ -39,7 +39,7 @@
       node.master: false,
       bootstrap.memory_lock: false,
       }
-    }
+      }
   vars:
     es_scripts: false
     es_templates: false
