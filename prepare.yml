@@ -24,7 +24,6 @@
     proxy_host: http://10.221.0.22
     proxy_port: 8080
 
-
 - hosts: elastic_server_data
   become: true
   remote_user: centos
