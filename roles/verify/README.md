@@ -1,3 +1,2 @@
 
 Verfica Installazione
-test
