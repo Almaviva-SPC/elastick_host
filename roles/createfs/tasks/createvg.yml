@@ -3,5 +3,5 @@
 - lvg:
     vg: "{{vgname}}"
     pvs: "/dev/{{devdisk}}1"
-  when: pv_created|succeded
+  when: pv_created|succeeded
   register: vg_created

@@ -5,5 +5,5 @@
     src: "/dev/{{vgname}}/{{lvname}}"
     fstype: "{{formatfs}}"
     state: mounted
-  when: fs_created|succeded and folder_created|succeded
+  when: fs_created|succeeded and folder_created|succeeded
   register: fs_mounted

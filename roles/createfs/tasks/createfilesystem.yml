@@ -3,5 +3,5 @@
   filesystem:
     fstype: "{{formatfs}}"
     dev: "/dev/{{vgname}}/{{lvname}}"
-  when: lv_created|succeded
+  when: lv_created|succeeded
   register: fs_created

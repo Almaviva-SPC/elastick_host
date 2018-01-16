@@ -4,5 +4,5 @@
     vg: "{{vgname}}"
     lv: "{{lvname}}"
     size: 100%FREE
-  when: vg_created|succeded
+  when: vg_created|succeeded
   regi: lv_created
