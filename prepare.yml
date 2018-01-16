@@ -14,6 +14,7 @@
       bootstrap.memory_lock: false,
       }
       }
+    - ansible-kibana
   vars:
     es_scripts: false
     es_templates: false
@@ -23,8 +24,7 @@
     es_proxy_port: 8080
     es_plugins:
       - plugin: ingest-geoip
-      
-    - ansible-kibana
+
 
 
 - hosts: elastic_server_data
