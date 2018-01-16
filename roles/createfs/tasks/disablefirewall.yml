@@ -1,4 +1,5 @@
-- service:
+- name: Disable Firewalld
+  service:
     name: firewalld
     state: stopped
     enabled: no
