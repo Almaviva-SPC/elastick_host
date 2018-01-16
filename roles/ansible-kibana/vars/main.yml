@@ -1,6 +1,2 @@
 ---
-devdisk: sdb
-vgname: elastic_vg
-lvname: elastic_lv
 kibana_conf_dir: /etc/kibana
-formatfs: xfs

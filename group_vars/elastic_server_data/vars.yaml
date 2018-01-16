@@ -1,1 +1,7 @@
 elastic_Cluster: "cluster-test"
+devdisk: sdb
+vgname: elastic_vg
+lvname: elastic_lv
+mountpath: /opt/data
+formatfs: xfs
+lvsize: 100%FREE

@@ -3,6 +3,6 @@
 - lvol:
     vg: "{{vgname}}"
     lv: "{{lvname}}"
-    size: 100%FREE
+    size: "{{lvsize}}"
   when: vg_created|succeeded
   register: lv_created
