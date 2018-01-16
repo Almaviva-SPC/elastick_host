@@ -14,10 +14,19 @@
     state: started
     enabled: yes
 
+- name: Create Folder for kibana configuration
+  file:
+    path: "{{kibana_conf_dir}}"
+    state: directory
+    owner: root
+    group: root
+    mode: 0775
+  register: folder_created
+
 - name: Copy Kibana configuration.
   template:
     src: kibana.yml.j2
-    dest: "/opt/kibana/config/kibana.yml"
+    dest: "{{kibana_conf_dir}}/kibana.yml"
     owner: root
     group: root
     mode: 0644
