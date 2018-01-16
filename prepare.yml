@@ -23,6 +23,7 @@
     es_proxy_port: 8080
     es_plugins:
       - plugin: ingest-geoip
+      
     - ansible-kibana
 
 
