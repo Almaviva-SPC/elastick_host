@@ -6,6 +6,7 @@
     owner: root
     group: root
     mode: 0775
+  register: folder_created
 
 - set_fact:
     setup_datadirectory: "{{mountpath}}"

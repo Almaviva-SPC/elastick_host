@@ -5,6 +5,7 @@
     number: 1
     flags: [ lvm ]
     state: present
+  register: pv_created
 
 
 # Read device information (always use unit when probing)

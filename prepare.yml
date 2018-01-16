@@ -23,6 +23,8 @@
       - plugin: ingest-geoip
         proxy_host: http://10.221.0.22
         proxy_port: 8080
+    - ansible-kibana
+
 
 - hosts: elastic_server_data
   become: true
