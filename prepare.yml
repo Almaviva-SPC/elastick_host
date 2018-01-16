@@ -8,6 +8,7 @@
       cluster.name: "{{elastic_Cluster}}",
       discovery.zen.ping.unicast.hosts: "{{master_node}}:9300",
       http.port: 9200,
+      network.host: "{{master_node}}"
       transport.tcp.port: 9300,
       node.data: false,
       node.master: true,
