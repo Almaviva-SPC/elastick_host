@@ -1,7 +1,5 @@
 # Ansible Role: Kibana
 
-[![Build Status](https://github.com/Almaviva-SPC/elastick_host/tree/master/roles/ansible-kibana)]
-
 An Ansible Role that installs Kibana on RedHat/CentOS or Debian/Ubuntu.
 
 ## Requirements
