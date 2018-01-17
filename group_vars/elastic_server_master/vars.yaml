@@ -5,3 +5,5 @@ lvname: elastic_lv
 mountpath: /opt/data
 formatfs: xfs
 lvsize: 100%FREE
+#Note the version must be the for data server and master server
+version_to_install: 5.6.6

@@ -16,7 +16,6 @@
 - name: RedHat - Install Logstash
   become: yes
   yum: name=logstash{% if es_version is defined and es_version != ""  %}-{{ es_version }}{% endif %} state=present update_cache=yes
-  when: es_use_repository
   register: redhat_logstash_install_from_repo
   notify: restart logstash
   until: '"failed" not in redhat_logstash_install_from_repo'
