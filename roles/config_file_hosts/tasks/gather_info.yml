@@ -1,7 +1,7 @@
 ---
 - name: Collect data for all hosts inside group elastic_server_master elastic_server_data
   lineinfile:
-    line: "{{ inventory_hostname }} {{ ansible_default_ipv4.address }}"
+    line: "{{ ansible_default_ipv4.address }} {{ inventory_hostname }}"
     path: /tmp/hosts
   with_items:
     - "{{ groups['host_to_discovery'] }}"
