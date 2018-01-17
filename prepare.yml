@@ -1,4 +1,4 @@
-- hosts: host_to_discovery
+- hosts: elk_host_to_discovery
   become: true
   remote_user: centos
   roles:

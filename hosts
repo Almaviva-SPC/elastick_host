@@ -1,4 +1,4 @@
-[host_to_discovery]
+[elk_host_to_discovery]
 ansible1
 ansible2
 ansible3
