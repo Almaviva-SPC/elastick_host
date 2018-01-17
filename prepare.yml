@@ -1,9 +1,3 @@
-- hosts: host_to_discovery
-  become: true
-  remote_user: centos
-  roles:
-    - discovery
-
 - hosts: elastic_server_master
   become: true
   remote_user: centos

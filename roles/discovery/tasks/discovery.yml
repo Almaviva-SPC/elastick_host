@@ -1,4 +1,0 @@
-- tasks:
-    - debug: var=ansible_nodename, var=hostvars[inventory_hostname]['ansible_default_ipv4']['address']
-    - debug: var=ansible_nodename
-    - debug: var=hostvars[inventory_hostname]['ansible_default_ipv6']['address']

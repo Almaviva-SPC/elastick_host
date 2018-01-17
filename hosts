@@ -1,8 +1,3 @@
-[host_to_discovery]
-ansible1
-ansible2
-ansible3
-
 [elastic_server_master]
 ansible1
 
