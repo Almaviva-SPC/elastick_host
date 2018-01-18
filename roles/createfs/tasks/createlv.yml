@@ -1,5 +1,5 @@
 ---
-# Create a logical volume the size of all remaining space in the volume group
+# Create a logical volume in the volume group whit size indicated
 - lvol:
     vg: "{{vgname}}"
     lv: "{{lvname}}"
