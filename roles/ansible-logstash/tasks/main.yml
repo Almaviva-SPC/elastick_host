@@ -1,6 +1,10 @@
 ---
 - name: Include OS Specific setup tasks
-  import_tasks: setup-{{ ansible_os_family }}.yml
+  import_tasks: setup-RedHat.yml
+  when: ansible_os_family == 'RedHat'
+
+- include: setup-Debian.yml
+  when: ansible_os_family == 'Debian'
 
 - import_tasks: config.yml
 - import_tasks: ssl.yml
