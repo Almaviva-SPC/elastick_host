@@ -10,3 +10,4 @@ The playbook use this variable
 * lvname: Name of the logical volume for elasticsearch data
 * mountpath: Data directory for elasticsearch
 * formatfs: File system Type
+prova
