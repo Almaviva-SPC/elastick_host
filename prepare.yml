@@ -22,6 +22,7 @@
       }
       }
     - ansible-kibana
+    - ansible-logstash
   vars:
     es_scripts: false
     es_templates: false
