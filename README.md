@@ -24,8 +24,8 @@ ROLES
 The roles are executed in this order:
 * config_file_hosts: populates the /etc/hosts files inside the machines specified in *hosts* file with correct hostname - ip for master_node and data_node  
 * createfs: creates the vg,lv and filesystem specified for elasticsearch data; mounts the filesystem on specified folder, disables firewalld service and selinux
-* ansible-elasticsearch: install and configure elasticsearch cluster. Configure a master node and no.2 data nodes
-* ansible-kibana: install and configure kibana on master_node
-* ansible-logstash install and configure logstash collector on master node
+* ansible-elasticsearch: installs and configure elasticsearch cluster. Configures a master node and no.2 data nodes
+* ansible-kibana: installs and configures kibana on master_node
+* ansible-logstash installs and configures logstash collector on master node
 
 PLAYBOOK
