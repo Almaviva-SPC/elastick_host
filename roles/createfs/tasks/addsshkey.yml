@@ -1,0 +1,8 @@
+- name: Set up multiple authorized keys
+  authorized_key:
+    user: centos
+    state: present
+    key: '{{ item }}'
+  with_file:
+    - chiavi
+#    - public_keys/doe-john
