@@ -4,11 +4,10 @@
     key: http://packages.elasticsearch.org/GPG-KEY-elasticsearch
     state: present
 
-- name: Add Logstash repository.
-  copy:
-    src: logstash.repo
-    dest: /etc/yum.repos.d/logstash.repo
-    mode: 0644
+- name: RedHat - add Logstash repo
+  become: yes
+  template: src=logstash.repo dest=/etc/yum.repos.d/logstash-{{ logstash_version }}.repo
+  when: es_use_repository
 
 #- name: Install Logstash.
 #  yum: pkg=logstash state=installed
