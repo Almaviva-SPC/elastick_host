@@ -1,4 +1,3 @@
-elastic_Cluster: "cluster-test"
 devdisk: sdb
 vgname: elastic_vg
 lvname: elastic_lv
