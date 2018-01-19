@@ -1,7 +1,6 @@
 ---
 - import_tasks: disable_selinux.yml
 - import_tasks: disablefirewall.yml
-- import_tasks: addsshkey.yml
 - import_tasks: CreatePV.yml
 - import_tasks: createvg.yml
 - import_tasks: createlv.yml
