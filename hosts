@@ -19,3 +19,6 @@ ansible3
 master_node=ansible1
 data_node1=ansible2
 data_node2=ansible3
+
+[logstash_install_host]
+ansible1
