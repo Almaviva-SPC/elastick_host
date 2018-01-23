@@ -27,7 +27,7 @@
 - name: Update Array for logstash Datanode connection Url
   when: data.node=="true"
   set_fact: logstash_data_node_url{{"logstash_data_node_url + [item]"}}
-  with_items: {{ansible_nodename}}
+  with_items: "{{ansible_nodename}}"
 
 - debug: msg="{{logstash_data_node_url}}"
 
