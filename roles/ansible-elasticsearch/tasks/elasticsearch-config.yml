@@ -24,10 +24,10 @@
   register: system_change
   notify: restart elasticsearch
 
-- name: Update Array for logstash Datanode connection Url
-  when: node.data == "true"
-  set_fact: logstash_data_node_url{{"logstash_data_node_url + [item]"}}
-  with_items: "{{ansible_nodename}}"
+# - name: Update Array for logstash Datanode connection Url
+#   when: node.data == "true"
+#   set_fact: logstash_data_node_url{{"logstash_data_node_url + [item]"}}
+#   with_items: "{{ansible_nodename}}"
 
 - debug: msg="{{logstash_data_node_url}}"
 
