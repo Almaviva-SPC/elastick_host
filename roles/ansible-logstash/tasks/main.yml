@@ -8,7 +8,7 @@
             logstash_elasticsearch_hosts: '{{logstash_elasticsearch_hosts + 'prova'}}'
   when: elasticsearch_master_is_datanode
 
-debug:
+- debug:
         msg: "{{logstash_elasticsearch_hosts}}"
 
 - name: Include OS Specific setup tasks
