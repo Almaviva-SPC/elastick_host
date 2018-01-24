@@ -9,18 +9,18 @@
   remote_user: centos
   roles:
     - createfs
-#    - {role: ansible-elasticsearch, es_instance_name: "{{ansible_nodename}}_Master", es_heap_size: "1g", es_data_dirs: "{{setup_datadirectory}}",
-    es_config: {
-      cluster.name: "{{elastic_Cluster}}",
-      discovery.zen.ping.unicast.hosts: "{{master_node}}:9300",
-      http.port: 9200,
-      network.host: "{{master_node}}",
-      transport.tcp.port: 9300,
-      node.data: true,
-      node.master: true,
-      bootstrap.memory_lock: false,
-      }
-      }
+    # - {role: ansible-elasticsearch, es_instance_name: "{{ansible_nodename}}_Master", es_heap_size: "1g", es_data_dirs: "{{setup_datadirectory}}",
+    # es_config: {
+    #   cluster.name: "{{elastic_Cluster}}",
+    #   discovery.zen.ping.unicast.hosts: "{{master_node}}:9300",
+    #   http.port: 9200,
+    #   network.host: "{{master_node}}",
+    #   transport.tcp.port: 9300,
+    #   node.data: true,
+    #   node.master: true,
+    #   bootstrap.memory_lock: false,
+    #   }
+    #   }
 #    - ansible-kibana
     - ansible-logstash
   vars:
