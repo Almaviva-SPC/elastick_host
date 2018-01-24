@@ -6,11 +6,11 @@ logstash_elasticsearch_hosts: ["http://{{data_node1}}:{{es_api_port}}", "http://
 
 debug:
       msg: "{{logstash_elasticsearch_hosts + prova}}"
-    when: elasticsearch_master_is_datanode == 'true'
+when: elasticsearch_master_is_datanode == 'true'
 
 set_fact:
           logstash_elasticsearch_hosts: '{{logstash_elasticsearch_hosts + prova}}'
-    when: elasticsearch_master_is_datanode == 'true'
+when: elasticsearch_master_is_datanode == 'true'
 
 logstash_local_syslog_path: /var/log/syslog
 logstash_monitor_local_syslog: true

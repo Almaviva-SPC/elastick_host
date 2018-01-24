@@ -4,4 +4,4 @@ logstash_data_node_url: []
 elasticsearch_master_is_datanode: true
 debug:
       msg: "prova"
-    when: elasticsearch_master_is_datanode == 'true'
+when: elasticsearch_master_is_datanode == 'true'
