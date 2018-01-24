@@ -1,7 +1,7 @@
 ---
 - name: set degli host di logstash
   set_fact:
-        logstash_elasticsearch_hosts: "{{logstash_elasticsearch_hosts + [http://{{master_node}}:{{es_api_port}}]}}"
+        logstash_elasticsearch_hosts: "{{logstash_elasticsearch_hosts + [ 'http://{{master_node}}:{{es_api_port}}'] }}"
   when: elasticsearch_master_is_datanode
 
 - name: Include OS Specific setup tasks
