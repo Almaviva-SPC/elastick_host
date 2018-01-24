@@ -1,3 +1,7 @@
 ekl_version_to_install: 5.6.6
 elastic_Cluster: cluster-test
 logstash_data_node_url: []
+elasticsearch_master_is_datanode: true
+debug:
+      msg: "prova"
+    when: elasticsearch_master_is_datanode == 'true'
