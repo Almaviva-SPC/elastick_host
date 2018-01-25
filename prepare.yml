@@ -16,7 +16,7 @@
       http.port: 9200,
       network.host: "{{master_node}}",
       transport.tcp.port: 9300,
-      node.data: true,
+      node.data: "{{elasticsearch_master_is_datanode}}",
       node.master: true,
       bootstrap.memory_lock: false,
       }

@@ -19,6 +19,7 @@ These variables can be specified for each server node and data node:
 These variables are common for master and data node:
 * ekl_version_to_install: the ELK stack version that must be installed and configured
 * elastic_Cluster: the name of the elasticsearch cluster
+* elasticsearch_master_is_datanode: if true the elasticsearch master node is added in the list of hosts logstash will connect to. When true, the value of *node.data* in prepare.yml MUST be set to true too.
 
 ROLES
 
