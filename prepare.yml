@@ -66,9 +66,3 @@
     es_proxy_port: 8080
     es_plugins:
       - plugin: ingest-geoip
-
-# - hosts: logstash_install_host
-#   become: true
-#   remote_user: centos
-#   roles:
-#     - ansible-logstash
