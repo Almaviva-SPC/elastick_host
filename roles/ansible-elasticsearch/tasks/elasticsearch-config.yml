@@ -29,7 +29,7 @@
 #   set_fact: logstash_data_node_url{{"logstash_data_node_url + [item]"}}
 #   with_items: "{{ansible_nodename}}"
 
-- debug: msg="{{logstash_data_node_url}}"
+#- debug: msg="{{logstash_data_node_url}}"
 
 #Copy the instance specific default file
 - name: Copy Default File for Instance

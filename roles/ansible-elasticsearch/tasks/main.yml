@@ -72,5 +72,5 @@
   tags:
       - templates
 
- - debug:
-     msg: es_config
+- debug:
+    msg: es_config
