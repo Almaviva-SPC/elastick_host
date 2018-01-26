@@ -71,3 +71,6 @@
   when: es_templates
   tags:
       - templates
+
+ - debug:
+     msg: es_config
