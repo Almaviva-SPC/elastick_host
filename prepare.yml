@@ -21,7 +21,7 @@
       bootstrap.memory_lock: false,
       }
       }
-#    - ansible-kibana
+    - ansible-kibana
     - ansible-logstash
   vars:
     es_scripts: false
