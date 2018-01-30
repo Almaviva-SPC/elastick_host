@@ -6,7 +6,12 @@ This ansible playbook prepares the enviroment (vg file file system repo ecc) and
 
 HOSTS
 
-the hosts affected by the playbook are written in *hosts* file.
+the hosts affected by the playbook are written in *hosts* file. The hosts groups are:
+
+* [elk_host_to_discovery]: list of all hosts hostname
+* [elastic_server_master]: the host hostname that will be the elasticsearch master node
+* [elastic_server_data]: list of hosts hostnames that will be the elasticsearch data nodes
+* [logstash_install_host]: the host hostname that will be the logstash collector node
 
 
 VARIABLES
