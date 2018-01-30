@@ -8,7 +8,7 @@ HOSTS
 
 the hosts affected by the playbook are written in *hosts* file. The hosts groups are:
 
-* [elk_host_to_discovery]: list of all hosts hostname
+* [elk_host_to_discovery]: list of all hosts hostnames
 * [elastic_server_master]: the host hostname that will be the elasticsearch master node
 * [elastic_server_data]: list of hosts hostnames that will be the elasticsearch data nodes
 * [logstash_install_host]: the host hostname that will be the logstash collector node
