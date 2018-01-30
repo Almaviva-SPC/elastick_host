@@ -1,8 +1,7 @@
 
-
 INSTALLATION OF ELASTICSEARCH, KIBANA AND LOGSTASH ON LINUX MACHINES
 
-This ansible playbook prepares the enviroment (vg file file system repo ecc) and install an ELK stack with a master elasticsearch node with kibana and logstash collector and one or more data elasticsearch node.
+This ansible playbook prepares the enviroment (vg file file system repo ecc) and install an ELK stack with a master elasticsearch node with kibana and logstash collector and two data elasticsearch nodes.
 
 
 HOSTS
@@ -25,6 +24,10 @@ These variables are common for master and data node:
 * ekl_version_to_install: the ELK stack version that must be installed and configured
 * elastic_Cluster: the name of the elasticsearch cluster
 * elasticsearch_master_is_datanode: if true the elasticsearch master node is added in the list of hosts logstash will connect to. When true, the value of *node.data* in prepare.yml is set to true too. In this way the host is considered either a master node or a data node
+* master_node: the hostname of elasticsearch master node
+* data_node1: the hostname of the first elasticsearch data node
+* data_node2: the hostname of the second elasticsearch data node
+
 
 ROLES
 
@@ -34,6 +37,7 @@ The roles are:
 * ansible-elasticsearch: installs and configure elasticsearch cluster; there are two different kind of installation that can be used: master installation and node installation  
 * ansible-kibana: installs and configures kibana
 * ansible-logstash installs and configures logstash collector
+
 
 PLAYBOOK
 
