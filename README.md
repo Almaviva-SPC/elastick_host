@@ -1,8 +1,13 @@
 
 
-Pre setup for installation of elasticsearch on linux machine
+INSTALLATION OF ELASTICSEARCH, KIBANA AND LOGSTASH ON LINUX MACHINES
 
-This ansible config the machine to prepare enviroment (vg file file system repo ecc)
+This ansible playbook prepares the enviroment (vg file file system repo ecc) and install an ELK stack with a master elasticsearch node with kibana and logstash collector and one or more data elasticsearch node.
+
+
+HOSTS
+
+the hosts affected by the playbook are written in *hosts* file.
 
 
 VARIABLES
@@ -19,7 +24,7 @@ These variables can be specified for each server node and data node:
 These variables are common for master and data node:
 * ekl_version_to_install: the ELK stack version that must be installed and configured
 * elastic_Cluster: the name of the elasticsearch cluster
-* elasticsearch_master_is_datanode: if true the elasticsearch master node is added in the list of hosts logstash will connect to. When true, the value of *node.data* in prepare.yml MUST be set to true too.
+* elasticsearch_master_is_datanode: if true the elasticsearch master node is added in the list of hosts logstash will connect to. When true, the value of *node.data* in prepare.yml is set to true too. In this way the host is considered either a master node or a data node
 
 ROLES
 
@@ -46,4 +51,4 @@ The playbook *prepare.yml* configures the machines in *hosts* file in this way:
 - starts role *ansible-logstash*
 - connects to machines of group 'elastic_server_node' (like user "centos" and sudo privilege)
 - starts role *createfs*
-- starts role *ansible-elasticsearch*. It now uses node installation to configure the 2 cluster nodes that actively store elasticsearch data. All values used for this installation are specified with variables or with default values inside /ansible-elasticsearch/defaults/main.yml, as for the master installation.
+- starts role *ansible-elasticsearch*. It now uses node installation to configure the cluster nodes that actively store elasticsearch data. All values used for this installation are specified with variables or with default values inside /ansible-elasticsearch/defaults/main.yml, as for the master installation.
