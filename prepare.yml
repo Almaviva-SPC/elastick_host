@@ -8,6 +8,7 @@
   become: true
   remote_user: centos
   roles:
+    - oracle-java
     - createfs
     - {role: ansible-elasticsearch, es_instance_name: "{{ansible_nodename}}_Master", es_heap_size: "1g", es_data_dirs: "{{setup_datadirectory}}",
     es_config: {
