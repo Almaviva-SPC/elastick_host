@@ -7,7 +7,7 @@
 - name: check-set-parameters
   include: elasticsearch-parameters.yml
   tags:
-      - always
+      - always 
 
 - include: java.yml
   when: es_java_install
