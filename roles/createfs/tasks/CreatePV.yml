@@ -2,7 +2,7 @@
 # Create a new primary partition for LVM
 - parted:
     device: "/dev/{{devdisk}}"
-    number: 1
+    number: "{{partition_number}}"
     flags: [ lvm ]
     state: present
   register: pv_created

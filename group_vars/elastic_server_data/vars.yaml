@@ -4,3 +4,4 @@ lvname: elastic_lv
 mountpath: /opt/data
 formatfs: xfs
 lvsize: 100%FREE
+partition_number: 1

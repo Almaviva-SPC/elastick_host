@@ -2,6 +2,6 @@
 # Create a volume group
 - lvg:
     vg: "{{vgname}}"
-    pvs: "/dev/{{devdisk}}1"
+    pvs: "/dev/{{devdisk}}{{partition_number}}"
   when: pv_created|succeeded
   register: vg_created
