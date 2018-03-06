@@ -1,0 +1,5 @@
+- name: RedHat - Install Logstash
+  become: yes
+  yum: name=lvm2 state=present
+  retries: 5
+  delay: 10
