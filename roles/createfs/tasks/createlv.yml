@@ -4,5 +4,7 @@
     vg: "{{vgname}}"
     lv: "{{lvname}}"
     size: "{{lvsize}}"
+    shrink: false 
+    state: present
   when: vg_created|succeeded
   register: lv_created
