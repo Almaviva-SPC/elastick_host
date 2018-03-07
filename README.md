@@ -1,6 +1,7 @@
 
 INSTALLATION OF ELASTICSEARCH, KIBANA AND LOGSTASH ON LINUX MACHINES
 
+
 This ansible playbook prepares the enviroment (vg file file system repo ecc) and install an ELK stack with a master elasticsearch node with kibana and logstash collector and two data elasticsearch nodes.
 
 
