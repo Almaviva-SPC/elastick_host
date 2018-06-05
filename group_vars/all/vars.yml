@@ -4,3 +4,4 @@ elasticsearch_master_is_datanode: true
 master_node: ansible1
 data_node1: ansible2
 data_node2: ansible3
+remote_user: root
