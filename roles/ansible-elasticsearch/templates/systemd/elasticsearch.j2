@@ -6,7 +6,13 @@ After=network-online.target
 
 [Service]
 Environment=ES_HOME={{es_home}}
+{% if ekl_version_to_install < 6 %}
 Environment=CONF_DIR={{conf_dir}}
+{% endif %}
+{% if ekl_version_to_install > 6 %}
+Environment=ES_PATH_CONF={{conf_dir}}
+{% endif %}
+
 Environment=DATA_DIR={{ data_dirs | array_to_str }}
 Environment=LOG_DIR={{log_dir}}
 Environment=PID_DIR={{pid_dir}}
@@ -17,14 +23,23 @@ WorkingDirectory={{es_home}}
 User={{es_user}}
 Group={{es_group}}
 
+{% if ekl_version_to_install < 6 %}
 ExecStartPre=/usr/share/elasticsearch/bin/elasticsearch-systemd-pre-exec
+{% endif %}
 
+
+{% if ekl_version_to_install < 6 %}
 ExecStart={{es_home}}/bin/elasticsearch \
                                     -p ${PID_DIR}/elasticsearch.pid \
                                     --quiet \
                                     -Edefault.path.logs=${LOG_DIR} \
                                     -Edefault.path.data=${DATA_DIR} \
                                     -Edefault.path.conf=${CONF_DIR}
+
+{% endif %}
+{% if ekl_version_to_install > 6 %}
+ExecStart=/usr/share/elasticsearch/bin/elasticsearch -p ${PID_DIR}/elasticsearch.pid --quiet
+{% endif %}
 
 
 # StandardOutput is configured to redirect to journalctl since
