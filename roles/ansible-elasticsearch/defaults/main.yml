@@ -1,5 +1,5 @@
 ---
-es_major_version: "5.x"
+es_major_version: "{{elk_major_version}}"
 es_version: "{{ekl_version_to_install}}"
 es_version_lock: false
 es_use_repository: true
