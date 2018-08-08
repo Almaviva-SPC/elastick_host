@@ -6,10 +6,10 @@ After=network-online.target
 
 [Service]
 Environment=ES_HOME={{es_home}}
-{% if ekl_version_to_install < 6 %}
+{% if elk_version_to_install < 6 %}
 Environment=CONF_DIR={{conf_dir}}
 {% endif %}
-{% if ekl_version_to_install > 6 %}
+{% if elk_version_to_install > 6 %}
 Environment=ES_PATH_CONF={{conf_dir}}
 {% endif %}
 
@@ -23,12 +23,12 @@ WorkingDirectory={{es_home}}
 User={{es_user}}
 Group={{es_group}}
 
-{% if ekl_version_to_install < 6 %}
+{% if elk_version_to_install < 6 %}
 ExecStartPre=/usr/share/elasticsearch/bin/elasticsearch-systemd-pre-exec
 {% endif %}
 
 
-{% if ekl_version_to_install < 6 %}
+{% if elk_version_to_install < 6 %}
 ExecStart={{es_home}}/bin/elasticsearch \
                                     -p ${PID_DIR}/elasticsearch.pid \
                                     --quiet \
