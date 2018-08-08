@@ -75,7 +75,7 @@ logger.index_indexing_slowlog.appenderRef.index_indexing_slowlog_rolling.ref = i
 logger.index_indexing_slowlog.additivity = false
 {% endif %}
 
-{% if ekl_version_to_install > 6 %}
+{% if elk_version_to_install > 6 %}
 status = error
 
 # log action execution errors for easier debugging
