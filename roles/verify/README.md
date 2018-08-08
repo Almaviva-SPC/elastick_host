@@ -1,2 +1,0 @@
-
-Verfica Installazione
