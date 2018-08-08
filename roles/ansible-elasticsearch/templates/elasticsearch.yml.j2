@@ -15,7 +15,7 @@ node.name: {{inventory_hostname}}-{{es_instance_name}}
 
 # Path to directory containing configuration (this file and logging.yml):
 
-{% if ekl_version_to_install < 6 %}
+{% if elk_version_to_install < 6 %}
 path.conf: {{ conf_dir }}
 {% endif %}
 
