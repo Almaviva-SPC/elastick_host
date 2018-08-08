@@ -37,7 +37,7 @@ ExecStart={{es_home}}/bin/elasticsearch \
                                     -Edefault.path.conf=${CONF_DIR}
 
 {% endif %}
-{% if ekl_version_to_install > 6 %}
+{% if elk_version_to_install > 6 %}
 ExecStart=/usr/share/elasticsearch/bin/elasticsearch -p ${PID_DIR}/elasticsearch.pid --quiet
 {% endif %}
 
