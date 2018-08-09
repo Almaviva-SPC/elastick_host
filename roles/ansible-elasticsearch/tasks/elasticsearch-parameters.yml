@@ -30,7 +30,7 @@
      msg: "ERROR: INVALID CONFIG - YOU CANNOT CHANGE RESERVED USERS THROUGH THE FILE REALM. THE FOLLOWING CANNOT BE CHANGED: {{file_reserved_users}}. USE THE NATIVE REALM."
   when: file_reserved_users | default([]) | length > 0
 
-- set_fact: instance_default_file=elasticsearch
+- set_fact: instance_default_file=/etc/sysconfig/elasticsearch
 #- set_fact: instance_default_file={{default_file | dirname}}/{{es_instance_name}}_{{default_file | basename}}
 
 - set_fact: instance_init_script={{init_script | dirname }}/{{es_instance_name}}_{{init_script | basename}}
