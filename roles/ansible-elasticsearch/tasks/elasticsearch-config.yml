@@ -82,10 +82,10 @@
   file: dest=/etc/default/elasticsearch state=absent
   when: ansible_os_family == 'Debian'
 
-- name: Delete Default Environment File
-  become: yes
-  file: dest=/etc/sysconfig/elasticsearch state=absent
-  when: ansible_os_family == 'RedHat'
+#- name: Delete Default Environment File
+#  become: yes
+#  file: dest=/etc/sysconfig/elasticsearch state=absent
+#  when: ansible_os_family == 'RedHat'
 
 - name: Delete Default Sysconfig File
   become: yes
